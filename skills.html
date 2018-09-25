@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--[if lt IE 9]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+    <script src="./js/jquery.tagcanvas.min.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -31,11 +33,11 @@
             <a href="./portfolio.html">Portfolio</a></li>
             <a href="./contact.html">Contact</a>
         </div>
-        <div class="webLinks">
-            <a href=""><i class="fab fa-github" aria-hidden="true"></i></a>
-            <a href=""><i class="fab fa-gitlab" aria-hidden="true"></i></a>
-            <a href=""><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-            <a href=""><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <div class="webLinks hide-on-small-only">
+            <a href="https://github.com/Faolun"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <!-- <a href=""><i class="fab fa-gitlab" aria-hidden="true"></i></a> -->
+            <a href="https://www.linkedin.com/in/james-coates-354a37140/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/james_coatesiii"><i class="fab fa-twitter" aria-hidden="true"></i></a>
         </div>
     </div>
 
@@ -47,8 +49,26 @@
             <div class="col l6 s12">
                 <h1>Skills</h1>
             </div>
+        </div>
+        <div class="row">
             <div class="col l6 s12">
-                <p>skill ball</p>
+
+            </div>
+            <div class="col l6 s12">
+                <div id="myCanvasContainer">
+                    <canvas width="500" height="500" id="myCanvas">
+                        <p>Sorry, this cool web element only works on newer browsers. Wish you could see it.</p>
+                        <ul>
+                            <li><a href="#" target="return false">HTML5</a></li>
+                            <li><a href="#" target="return false">CSS</a></li>
+                            <li><a href="#" target="return false">Javascript</a></li>
+                            <li><a href="#" target="return false">jQuery</a></li>
+                            <li><a href="#" target="return false">HTML</a></li>
+                            <li><a href="#" target="return false">HTML</a></li>
+
+                        </ul>
+                    </canvas>
+                </div>
             </div>
         </div>
     </div>
@@ -59,6 +79,8 @@
 <!-- Javascript -->
 <!-- Compiled and minified Materialize JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-<script src="./script.js"></script>
+<script src="./js/script.js"></script>
+
+
 
 </html>
