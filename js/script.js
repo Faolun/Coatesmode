@@ -21,5 +21,8 @@ $(document).ready(function () {
   }
   // your other jQuery stuff here...
 
+});
+
+$(document).ready(function () {
   $('.materialboxed').materialbox();
 });
