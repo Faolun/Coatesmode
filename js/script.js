@@ -19,10 +19,14 @@ $(document).ready(function () {
     // TagCanvas failed to load
     $('#myCanvasContainer').hide();
   }
-  // your other jQuery stuff here...
-
 });
 
 $(document).ready(function () {
   $('.materialboxed').materialbox();
 });
+
+
+// bubble link prevention
+document.getElementById("nothing").addEventListener("click", function(event){
+  event.preventDefault()
+  });

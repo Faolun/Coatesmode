@@ -2,10 +2,8 @@ body {
     margin: 0;
     font-family: "Lato", sans-serif;
   }
-  
-  /* SIDEBAR */
- 
 
+  /* SIDEBAR */
 
   .sidebar {
     margin: 0;
@@ -15,12 +13,14 @@ body {
     position: fixed;
     height: 100%;
     overflow: auto;
+    font-size: 14px;
+    margin-top: -100px;
   }
   
   .sidebar a {
     display: block;
     color: black;
-    padding: 16px;
+    padding: 18px;
     text-decoration: none;
   }
    
@@ -40,13 +40,19 @@ body {
     height: 1000px;
   }
 
-  div.container {
-    padding-top: 100px;
+  div.container-fluid {
+    margin-top: 100px;
+    background-color: white;
+    padding: 20px;
+    margin-left: 150px;
+    margin-right: 50px;
   }
 
   div.webLinks {
     position: absolute;
     bottom: 0;
+    width: 100px;
+    text-align: center;
   }
 
   img.circle{
@@ -68,12 +74,16 @@ body {
       height: auto;
       position: relative;
       text-align: center;
+      margin-top: 0;
     }
     .sidebar a {
       float: left;
       align-items: center;
   }
-
+    div.container-fluid {
+    margin: auto;
+    margin-top: 50px;
+  }
     div.content {
       margin-left: 0;
     }
@@ -83,8 +93,9 @@ body {
     }
     div.webLinks {
       position: relative;
-      float:right;
+      float: right;
       padding-top: 15px;
+      width: auto;
     }
 }
 
@@ -93,8 +104,9 @@ body {
       text-align: center;
       float: none;
     }
-    div.container {
+    div.container-fluid {
       padding-top: 0px;
+
     }
 
     .pageHead {
