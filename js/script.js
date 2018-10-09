@@ -7,7 +7,7 @@ $(document).ready(function () {
     freezeActive: true,
     shuffleTags: true,
     shape: 'sphere',
-    zoom: 1,
+    zoom: 0.95,
     textFont: "Helvetica, Arial, sans-serif",
     pinchZoom: true,
     freezeDecel: true,

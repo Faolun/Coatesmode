@@ -1,6 +1,11 @@
 body {
     margin: 0;
     font-family: "Lato", sans-serif;
+    background-color: #36393f;
+    color: white;
+  }
+  h1 {
+    color: #7289DA;
   }
 
   /* SIDEBAR */
@@ -9,28 +14,28 @@ body {
     margin: 0;
     padding: 0;
     width: 100px;
-    background-color: #f1f1f1;
+    background-color: #2f3136;
     position: fixed;
     height: 100%;
     overflow: auto;
     font-size: 14px;
-    margin-top: -100px;
+    z-index: 2;
   }
   
   .sidebar a {
     display: block;
-    color: black;
+    color: #737f8c;
     padding: 18px;
     text-decoration: none;
   }
    
   .sidebar a.active {
-    background-color: #4CAF50;
+    background-color: #7289DA;
     color: white;
   }
   
   .sidebar a:hover:not(.active) {
-    background-color: #555;
+    background-color: #36393f;
     color: white;
   }
   
@@ -41,14 +46,22 @@ body {
   }
 
   div.container-fluid {
-    margin-top: 100px;
-    background-color: white;
-    padding: 20px;
+    padding-top: 100px;
+    /* padding: 20px; */
     margin-left: 150px;
     margin-right: 50px;
   }
 
-  div.webLinks {
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+
+   div.webLinks {
     position: absolute;
     bottom: 0;
     width: 100px;
@@ -60,12 +73,32 @@ body {
     max-width: 50px;
     background: #ffffff;
   }
-  
+
+  .banner {
+    background-color: #23272A;
+  }
+
+
+  /* INDEX */
+
+  #indexLogo {
+    height: 500px;
+  }
+
   /* ABOUT */
 
   #aboutPortrait {
     max-width:100%;
     max-height:100%;
+  }
+
+
+  /* SKILLS */
+
+  canvas {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media screen and (max-width: 993px) {
@@ -74,7 +107,7 @@ body {
       height: auto;
       position: relative;
       text-align: center;
-      margin-top: 0;
+
     }
     .sidebar a {
       float: left;
@@ -82,7 +115,7 @@ body {
   }
     div.container-fluid {
     margin: auto;
-    margin-top: 50px;
+    padding-top: 50px;
   }
     div.content {
       margin-left: 0;
@@ -97,16 +130,20 @@ body {
       padding-top: 15px;
       width: auto;
     }
+    #indexLogo {
+      max-width:100%;
+      max-height:100%;
+    }
 }
 
   @media screen and (max-width: 385px) {
+    
     .sidebar a, .webLinks {
       text-align: center;
       float: none;
     }
     div.container-fluid {
       padding-top: 0px;
-
     }
 
     .pageHead {
