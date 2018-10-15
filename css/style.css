@@ -30,12 +30,12 @@ body {
   }
    
   .sidebar a.active {
-    background-color: #7289DA;
+    background-color: #36393f;
     color: white;
   }
   
   .sidebar a:hover:not(.active) {
-    background-color: #36393f;
+    background-color:#7289DA;
     color: white;
   }
   
@@ -99,6 +99,18 @@ body {
     display: block;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  /* PORTFOLIO */
+
+  .portWrapper {
+   padding: 20px;
+   border-style: solid;
+   border-width: 2px;
+   border-color: grey;
+   background-color: white;
+   color: black;
+   box-shadow: 10px 10px #23272A;
   }
 
   @media screen and (max-width: 993px) {
