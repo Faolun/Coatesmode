@@ -47,7 +47,6 @@ body {
 
   div.container-fluid {
     padding-top: 100px;
-    /* padding: 20px; */
     margin-left: 150px;
     margin-right: 50px;
   }
@@ -59,7 +58,7 @@ body {
     min-width: 100%; 
     min-height: 100%;
     z-index: -1;
-}
+  }
 
    div.webLinks {
     position: absolute;
@@ -78,11 +77,24 @@ body {
     background-color: #23272A;
   }
 
+  .btn-small {
+    background-color:#7289DA;
+  }
+  .btn-small:hover {
+    background-color:#8CA3F4;
+  }
 
   /* INDEX */
 
+  .indexWrapper{
+    text-align: center;
+  }
+
   #indexLogo {
-    height: 500px;
+    height: 550px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* ABOUT */
@@ -103,15 +115,67 @@ body {
 
   /* PORTFOLIO */
 
+  .portContainer {
+    margin-top: -60px;
+    /* margin-right: 300px; */
+  }
+
   .portWrapper {
-   padding: 20px;
-   border-style: solid;
-   border-width: 2px;
-   border-color: grey;
    background-color: white;
    color: black;
-   box-shadow: 10px 10px #23272A;
+   box-shadow: 7px 7px 5px #23272A;
+   border-radius: 5px;
   }
+
+  .portDesWrapper {
+    margin: 10px 0px 10px 10px;
+  }
+
+  .portTitle {
+    margin: 0px 0px -20px 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .portSubtitle {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .chipWrapper {
+    text-align: center;
+  }
+  .chip {
+    color:white;
+    background-color:#99AAB5;
+  }
+
+  .portPara {
+    text-align: center;
+  }
+
+  .buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .buttons a {
+    margin-right: 5px;
+  }
+
+  .portfolioImg {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 10px 10px 10px 10px;
+    border-style: solid;
+    border-color: #36393f;
+    border-width: 1px;
+    border-radius: 5px;
+    /* float: right; */
+  }
+  
+   /* MEDIA */
 
   @media screen and (max-width: 993px) {
     .sidebar {
@@ -119,16 +183,15 @@ body {
       height: auto;
       position: relative;
       text-align: center;
-
     }
     .sidebar a {
       float: left;
       align-items: center;
-  }
+    }
     div.container-fluid {
-    margin: auto;
-    padding-top: 50px;
-  }
+      margin: auto;
+      padding-top: 50px;
+    }
     div.content {
       margin-left: 0;
     }
@@ -146,14 +209,22 @@ body {
       max-width:100%;
       max-height:100%;
     }
+    #myCanvas {
+      width: 400px;
+      height: 400px;
+    }
+    .portfolioImg {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
-  @media screen and (max-width: 385px) {
-    
+  @media screen and (max-width: 385px) { 
     .sidebar a, .webLinks {
-      text-align: center;
       float: none;
     }
+
     div.container-fluid {
       padding-top: 0px;
     }
@@ -162,8 +233,16 @@ body {
       text-align: center;
     }
 
+    .portContainer {
+      margin-top: 0px;
+    }
+    .portfolioImg {
+      max-height: 90%;
+      max-width: 90%;
+    }
     #myCanvas {
       width: 300px;
       height: 300px;
     }
+
   }
