@@ -49,6 +49,7 @@ body {
     padding-top: 100px;
     margin-left: 150px;
     margin-right: 50px;
+    display:none;
   }
 
   #myVideo {
@@ -83,6 +84,9 @@ body {
   .btn-small:hover {
     background-color:#8CA3F4;
   }
+  .btn-small:focus {
+    background-color:#3F56A7;
+  }
 
   /* INDEX */
 
@@ -115,6 +119,24 @@ body {
 
   /* PORTFOLIO */
 
+  .carousel  {
+
+    min-height:1160px;
+    margin-top: -480px;
+    z-index:500;
+  }
+
+  .carousel .carousel-item {
+    width:800px;}
+
+.material-icons.md1::before{
+  content:"search"; 
+}
+
+.material-icons.md1:hover::before{
+  content:"navigate_next"; 
+}
+
   .portContainer {
     margin-top: -60px;
     /* margin-right: 300px; */
@@ -129,6 +151,32 @@ body {
 
   .portDesWrapper {
     margin: 10px 0px 10px 10px;
+  }
+
+  .card {
+    color: black;
+  }
+  .card-content {
+    user-select: none;
+    -moz-user-select: none;
+  }
+  .card-image {
+    user-select: none;
+    -moz-user-select: none; 
+  }
+  .card .card-action {
+    padding:10px;
+    text-align: center;
+    user-select: none;
+    -moz-user-select: none; 
+  }
+
+  .carousel .indicators {
+    z-index: -1;
+  }
+
+  .material-icons {
+    font-size: 40px;
   }
 
   .portTitle {
@@ -163,17 +211,6 @@ body {
     margin-right: 5px;
   }
 
-  .portfolioImg {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 10px 10px 10px 10px;
-    border-style: solid;
-    border-color: #36393f;
-    border-width: 1px;
-    border-radius: 5px;
-    /* float: right; */
-  }
   
    /* MEDIA */
 
@@ -213,11 +250,16 @@ body {
       width: 400px;
       height: 400px;
     }
-    .portfolioImg {
-      float: none;
-      margin-left: auto;
-      margin-right: auto;
+
+    .carousel  {
+      min-height: 620px;
+      margin-top:-190px;
     }
+  
+    .carousel .carousel-item {
+      width: 300px;
+  }
+
 }
 
   @media screen and (max-width: 385px) { 
@@ -236,10 +278,17 @@ body {
     .portContainer {
       margin-top: 0px;
     }
-    .portfolioImg {
-      max-height: 90%;
-      max-width: 90%;
+
+    .carousel  {
+      min-height:550px;
+      margin-top:-175px;
     }
+  
+    .carousel .carousel-item {
+      width:275px;
+  }
+
+ 
     #myCanvas {
       width: 300px;
       height: 300px;

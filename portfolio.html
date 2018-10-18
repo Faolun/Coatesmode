@@ -24,11 +24,11 @@
     <!-- responsive navbar -->
 
     <div class="sidebar">
-        <a href="./index.html"><img src="./assets/images/beardLogo.svg" alt="Logo" class="circle"></a>
+        <a href="./index.html" class="transition"><img src="./assets/images/beardLogo.svg" alt="Logo" class="circle"></a>
         <div class="pageLinks">
-            <a href="./about.html">About</a>
-            <a href="./skills.html">Skills</a>
-            <a class="active" href="./portfolio.html">Portfolio</a></li>
+            <a href="./about.html" class="transition">About</a>
+            <a href="./skills.html" class="transition">Skills</a>
+            <a class="active transition" href="./portfolio.html">Portfolio</a></li>
             <a href="mailto:james.coatesiii@gmail.com">Contact</a>
         </div>
         <div class="webLinks hide-on-small-only">
@@ -42,129 +42,185 @@
     <!-- Content -->
 
     <div class="container-fluid">
-        <!-- <div class="row">
-            <div class="col s12">
-                <h1 class="pageHead">Portfolio</h1>
-            </div>
-        </div> -->
         <div class="portContainer">
-            <!-- <div class="portWrapper">
-                <div class="row">
-                    <div class="col l6 m12">
-                        <div class="portDesWrapper">
-                            <p class="portTitle">Shelf-It</p>
-                            <p class="portSubtitle">A to-do list based whiskey tasting app.</p>
-                            <div class="chipWrapper">
-                                <div class="chip">JavaScript</div>
-                                <div class="chip">MySql</div>
-                                <div class="chip">HTML5</div>
-                                <div class="chip">CSS</div>
-                                <div class="chip">Materialize.css</div>
-                            </div>
-                            <p class="portPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-                                tenetur aliquid
-                                molestias
-                                deserunt labore sunt enim suscipit ipsum, nisi minus nemo nulla, laudantium
-                                officiis,
-                                magnam totam omnis. Cupiditate, inventore placeat.</p>
-                            <div class="buttons">
-                                <a class="waves-effect waves-light btn-small">Github</a>
-                                <a class="waves-effect waves-light btn-small">Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col l6 m12">
-                        <div class="portImgWrapper">
-                            <img class="materialboxed portfolioImg hoverable" src="./assets/images/test.png" alt="portfolio image">
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <div class="row">
-                <div class="col l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img class="materialboxed" src="./assets/images/test.png">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">arrow_drop_up</i></span>
-                            <p><a href="#">This is a link</a></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">Github</a>
-                            <a href="#">Demo</a>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">arrow_drop_down</i></span>
-                            <div class="chipWrapper">
-                                    <div class="chip">JavaScript</div>
-                                    <div class="chip">MySql</div>
-                                    <div class="chip">HTML5</div>
-                                    <div class="chip">CSS</div>
-                                    <div class="chip">Materialize.css</div>
+                <div class="col s12">
+
+                    <div class="carousel">
+                        <!-- carousel items -->
+                        <div class="carousel-item">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img class="materialboxed" src="./assets/images/test.png">
                                 </div>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img class="materialboxed" src="./assets/images/test.png">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">arrow_drop_up</i></span>
-                            <p><a href="#">This is a link</a></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">Github</a>
-                            <a href="#">Demo</a>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">arrow_drop_down</i></span>
-                            <div class="chipWrapper">
-                                    <div class="chip">JavaScript</div>
-                                    <div class="chip">MySql</div>
-                                    <div class="chip">HTML5</div>
-                                    <div class="chip">CSS</div>
-                                    <div class="chip">Materialize.css</div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Shelf-It<i class="material-icons right">arrow_drop_up</i></span>
+                                    <p class="card-subtitle">A database backed whiskey tasting app.</p>
                                 </div>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img class="materialboxed" src="./assets/images/test.png">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">arrow_drop_up</i></span>
-                            <p><a href="#">This is a link</a></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">Github</a>
-                            <a href="#">Demo</a>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">arrow_drop_down</i></span>
-                            <div class="chipWrapper">
-                                    <div class="chip">JavaScript</div>
-                                    <div class="chip">MySql</div>
-                                    <div class="chip">HTML5</div>
-                                    <div class="chip">CSS</div>
-                                    <div class="chip">Materialize.css</div>
+                                <div class="card-action">
+                                    <a class="waves-effect waves-light btn-small" target="_blank" href="https://github.com/Faolun/Shelf-It">Github</a>
+                                    <a class="waves-effect waves-light btn-small" target="_blank" href="https://shelf-it.herokuapp.com/">Demo</a>
                                 </div>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Shelf-It<i class="material-icons right">arrow_drop_down</i></span>
+                                    <div class="chipWrapper">
+                                        <div class="chip">JavaScript</div>
+                                        <div class="chip">MySql</div>
+                                        <div class="chip">Handlebars.js</div>
+                                        <div class="chip">Materialize.css</div>
+                                    </div>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
+                                        aut hic placeat, aliquid accusantium iure accusamus voluptatibus alias veniam
+                                        culpa vitae. Veniam laboriosam voluptatum quisquam laudantium iste quae, est
+                                        quidem.</p>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
+                                        aut hic placeat, aliquid accusantium iure accusamus voluptatibus alias veniam
+                                        culpa vitae. Veniam laboriosam voluptatum quisquam laudantium iste quae, est
+                                        quidem.</p>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
+                                        aut hic placeat, aliquid accusantium iure accusamus voluptatibus alias veniam
+                                        culpa vitae. Veniam laboriosam voluptatum quisquam laudantium iste quae, est
+                                        quidem.</p>
+                                </div>
+                            </div>
                         </div>
+                        <div class="carousel-item">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img class="materialboxed" src="./assets/images/weirdWideWeb.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Weird Wide Web<i class="material-icons right">arrow_drop_up</i></span>
+                                    <p class="card-subtitle">A database for the weirdness on the web that allows users to update and rate entries.</p>
+                                </div>
+                                <div class="card-action">
+                                        <a class="waves-effect waves-light btn-small" target="_blank" href="https://github.com/Uncanny-Team/Weird-Wide-Web">Github</a>
+                                        <a class="waves-effect waves-light btn-small" target="_blank" href="https://boiling-river-46975.herokuapp.com">Demo</a>
+                                    </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Weird Wide Web<i class="material-icons right">arrow_drop_down</i></span>
+                                    <div class="chipWrapper">
+                                        <div class="chip">JavaScript</div>
+                                        <div class="chip">MongoDB</div>
+                                        <div class="chip">React.js</div>
+                                        <div class="chip">Materialize.css</div>
+                                    </div>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
+                                        aut hic placeat, aliquid accusantium iure accusamus voluptatibus alias veniam
+                                        culpa vitae. Veniam laboriosam voluptatum quisquam laudantium iste quae, est
+                                        quidem.</p>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
+                                        aut hic placeat, aliquid accusantium iure accusamus voluptatibus alias veniam
+                                        culpa vitae. Veniam laboriosam voluptatum quisquam laudantium iste quae, est
+                                        quidem.</p>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
+                                        aut hic placeat, aliquid accusantium iure accusamus voluptatibus alias veniam
+                                        culpa vitae. Veniam laboriosam voluptatum quisquam laudantium iste quae, est
+                                        quidem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img class="materialboxed" src="./assets/images/forkcast.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Forkcast<i class="material-icons right">arrow_drop_up</i></span>
+                                    <p class="card-subtitle">A comfort food recipie web app that makes suggestions based on time and temperature.</p>
+                                </div>
+                                <div class="card-action">
+                                        <a class="waves-effect waves-light btn-small" target="_blank" href="https://github.com/ForkcastFoods/ForkcastFoods.github.io">Github</a>
+                                        <a class="waves-effect waves-light btn-small" target="_blank" href="https://forkcastfoods.github.io/">Demo</a>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Forkcast<i class="material-icons right">arrow_drop_down</i></span>
+                                    <div class="chipWrapper">
+                                        <div class="chip">JavaScript</div>
+                                        <div class="chip">jQuery</div>
+                                        <div class="chip">AJAX</div>
+                                        <div class="chip">API</div>
+                                        <div class="chip">Firebase</div>
+                                        <div class="chip">HTML5</div>
+                                        <div class="chip">Bootstrap.css</div>
+                                    </div>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
+                                        aut hic placeat, aliquid accusantium iure accusamus voluptatibus alias veniam
+                                        culpa vitae. Veniam laboriosam voluptatum quisquam laudantium iste quae, est
+                                        quidem.</p>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
+                                        aut hic placeat, aliquid accusantium iure accusamus voluptatibus alias veniam
+                                        culpa vitae. Veniam laboriosam voluptatum quisquam laudantium iste quae, est
+                                        quidem.</p>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
+                                        aut hic placeat, aliquid accusantium iure accusamus voluptatibus alias veniam
+                                        culpa vitae. Veniam laboriosam voluptatum quisquam laudantium iste quae, est
+                                        quidem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img class="materialboxed" src="./assets/images/bAmazon.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">bAmazon<i class="material-icons right">arrow_drop_up</i></span>
+                                    <p>A command-line interface (CLI) with three level access for an "Amazon Like" store with a medieval game twist.</p>
+                                </div>
+                                <div class="card-action">
+                                        <a class="waves-effect waves-light btn-small" target="_blank" href="https://github.com/Faolun/bamazon">Github</a>
+                                        <a class="waves-effect waves-light btn-small disabled" target="_blank" href="#">Demo</a>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">bAmazon<i class="material-icons right">arrow_drop_down</i></span>
+                                    <div class="chipWrapper">
+                                        <div class="chip">JavaScript</div>
+                                        <div class="chip">MySql</div>
+                                        <div class="chip">HTML5</div>
+                                        <div class="chip">CSS</div>
+                                        <div class="chip">Materialize.css</div>
+                                    </div>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
+                                        aut hic placeat, aliquid accusantium iure accusamus voluptatibus alias veniam
+                                        culpa vitae. Veniam laboriosam voluptatum quisquam laudantium iste quae, est
+                                        quidem.</p>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
+                                        aut hic placeat, aliquid accusantium iure accusamus voluptatibus alias veniam
+                                        culpa vitae. Veniam laboriosam voluptatum quisquam laudantium iste quae, est
+                                        quidem.</p>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
+                                        aut hic placeat, aliquid accusantium iure accusamus voluptatibus alias veniam
+                                        culpa vitae. Veniam laboriosam voluptatum quisquam laudantium iste quae, est
+                                        quidem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- carousel-items -->
                     </div>
+
                 </div>
             </div>
-        </div> <!-- end portCountainer -->
+        </div>
+    </div> <!-- end portCountainer -->
 </body>
 <!-- Javascript -->
 <!-- Compiled and minified Materialize JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 <script src="./js/script.js"></script>
+<script src="./js/portfolio.js"></script>
+
 
 </html>

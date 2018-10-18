@@ -1,3 +1,19 @@
+$(document).ready(function (){
+  $(".container-fluid").css("display", "none");
+  $(".container-fluid").fadeIn(500);
+  $(".transition").click(function(event){
+    event.preventDefault();
+    linkLocation = this.href;
+    $(".container-fluid").fadeOut(250, redirectPage);      
+});
+     
+function redirectPage() {
+    window.location = linkLocation;
+}
+})
+
+
+
 $(document).ready(function () {
   if (!$('#myCanvas').tagcanvas({
     textColour: '#000000',
@@ -23,6 +39,17 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.materialboxed').materialbox();
+});
+
+$(document).ready(function () {
+  $('.carousel').carousel({
+      duration: 100,
+      padding: -100,
+      numVisable: 3,
+      indicators: true,
+      dist: -100,
+
+  });
 });
 
 
