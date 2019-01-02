@@ -31,7 +31,7 @@
             <a href="./about.html" class="transition">About</a>
             <a class="active transition" href="./skills.html">Skills</a>
             <a href="./portfolio.html" class="transition">Portfolio</a></li>
-            <a href="mailto:james.coatesiii@gmail.com">Contact</a>
+            <a class="modal-trigger" href="#contactModal">Contact</a>
         </div>
         <div class="webLinks hide-on-small-only">
             <a href="https://github.com/Faolun"><i class="fab fa-github" aria-hidden="true"></i></a>
@@ -62,6 +62,15 @@
                                 iure. Inventore corporis explicabo temporibus soluta minima aliquam reiciendis tempora,
                                 nulla
                                 vero unde?</p>
+                            <br>
+                            <h5>Additional Skills</h5>
+                            <ul>
+                                <li>Copywriting</li>
+                                <li>Technical Writing</li>
+                                <li>Basic Photography</li>
+                                <li>Adobe Suite</li>
+                                <li>Microsoft Office</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="row">
@@ -81,9 +90,9 @@
                                 <li><a href="javascript:void(0);">CSS</a></li>
                                 <li><a href="javascript:void(0);">Javascript</a></li>
                                 <li><a href="javascript:void(0);">jQuery</a></li>
-                                <li><a href="javascript:void(0);">Handlebars</a></li>
+                                <li><a href="javascript:void(0);">Handlebars.js</a></li>
                                 <li><a href="javascript:void(0);">React</a></li>
-                                <li><a href="javascript:void(0);">Node</a></li>
+                                <li><a href="javascript:void(0);">Node.js</a></li>
                                 <li><a href="javascript:void(0);">MySQL</a></li>
                                 <li><a href="javascript:void(0);">Sequelize</a></li>
                                 <li><a href="javascript:void(0);">Express</a></li>
@@ -100,7 +109,49 @@
         </div>
     </div>
 
-
+    <!-- Contact Modal  -->
+    <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <h4>Contact</h4>
+                <div class="row">
+                    <form class="col s12 l6">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email Address</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="message" class="materialize-textarea" length="300"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <a href="#" class="waves-effect waves-light btn-small">Send</a>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="col s12 l6">
+                        <h4>or check me out on social media</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-light btn-small">Close</a>
+            </div>
+        </div>
 
 </body>
 <!-- Javascript -->

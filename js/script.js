@@ -16,15 +16,16 @@ function redirectPage() {
 
 $(document).ready(function () {
   if (!$('#myCanvas').tagcanvas({
-    textColour: '#000000',
+    textColour: '#fff',
     outlineThickness: 0.5,
-    outlineColour: '#fe0853',
+    outlineColour: '#7289DA',
     maxSpeed: 0.06,
     freezeActive: true,
     shuffleTags: true,
     shape: 'sphere',
     zoom: 0.95,
     textFont: "Helvetica, Arial, sans-serif",
+    textHeight: 24,
     pinchZoom: true,
     freezeDecel: true,
     fadeIn: 1500,
@@ -50,6 +51,9 @@ $(document).ready(function () {
       dist: -100,
 
   });
+});
+$(document).ready(function(){
+  $('.modal').modal();
 });
 
 
