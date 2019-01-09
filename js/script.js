@@ -12,8 +12,6 @@ function redirectPage() {
 }
 })
 
-
-
 $(document).ready(function () {
   if (!$('#myCanvas').tagcanvas({
     textColour: '#fff',
@@ -25,7 +23,7 @@ $(document).ready(function () {
     shape: 'sphere',
     zoom: 0.95,
     textFont: "Helvetica, Arial, sans-serif",
-    textHeight: 24,
+    textHeight: 18,
     pinchZoom: true,
     freezeDecel: true,
     fadeIn: 1500,

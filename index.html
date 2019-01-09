@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>James Coates Web Developer</title>
+    <title>CoatesMode</title>
     <!-- CSS -->
     <!-- Compiled and minified Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Share+Tech+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7"
@@ -24,7 +25,7 @@
     <!-- responsive navbar -->
 
     <div class="sidebar">
-        <a class="active transition" href="./index.html"><img src="./assets/images/beardLogo.svg" alt="Logo" class="circle"></a>
+        <a class="transition" href="./index.html"><img src="./assets/images/beardLogo.svg" alt="Logo" class="circle"></a>
         <div class="pageLinks">
             <a href="./about.html" class="transition">About</a>
             <a href="./skills.html" class="transition">Skills</a>
@@ -47,65 +48,83 @@
         <div class="row">
             <div class="col l8 s12">
                 <div class="indexWrapper">
-                    <h1 class="pageHead">COATESMODE</h1>
-                    <h2>Let me fix your
-                        <span id="content-1">Website.</span>
-                        <span id="content-2">Front End.</span>
-                        <span id="content-3">Back End.</span>
-                        <span id="content-4">UI.</span>
-                        <span id="content-5">UX.</span></h2>
-                    <p>UI/UX > Full Stack</p>
-                    <a class="waves-effect waves-light btn-small" href="./contact.html">Contact</a>
+                    <h1 class="pageHead" id="indexTitle">JAMES COATES</h1>
+                    <p id="indexTagline">FULL STACK DEVELOPER</p>
+                    <br>
+                    <h2 id="indexSubtitle">Unlock your next level
+                        <span id="content-1">website.</span>
+                        <span id="content-2">front end.</span>
+                        <span id="content-3">design.</span>
+                        <span id="content-4">back end.</span>
+                        <span id="content-5">user interface.</span>
+                        <span id="content-6">user experience.</span></h2>
+                    <br>
+                    <a class="waves-effect waves-light btn-small modal-trigger" href="#contactModal">Contact</a>
+                </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="portInlineWrapper">
+                            <ul class="indexPortInline">
+                                <li><a href="./portfolio.html"><img class="indexPortfolioExample" src="./assets/images/americanHouse.png" alt="AmericanHouse"></a></li>
+                                <li><a href="./portfolio.html"><img class="indexPortfolioExample" src="./assets/images/forkcast.png" alt="AmericanHouse"></a></li>
+                                <li><a href="./portfolio.html"><img class="indexPortfolioExample" src="./assets/images/bAmazon.png" alt="AmericanHouse"></a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            </div>
             <div class="col l4 s12">
-                <img src="./assets/images/beardLogoW.svg" alt="logo" id="indexLogo">
+                <img src="./assets/images/beardLogoWB.svg" alt="logo" id="indexLogo">
             </div>
         </div>
     </div>
     <!-- Contact Modal  -->
     <div id="contactModal" class="modal">
-            <div class="modal-content">
-                <h4>Contact</h4>
-                <div class="row">
-                    <form class="col s12 l6">
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input id="first_name" type="text" class="validate">
-                                <label for="first_name">First Name</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input id="last_name" type="text" class="validate">
-                                <label for="last_name">Last Name</label>
-                            </div>
+        <div class="modal-content">
+            <h4>Contact</h4>
+            <div class="row">
+                <form class="col s12 l6">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
                         </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="email" type="email" class="validate">
-                                <label for="email">Email Address</label>
-                            </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
                         </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <textarea id="message" class="materialize-textarea" length="300"></textarea>
-                                <label for="message">Message</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col s12">
-                                <a href="#" class="waves-effect waves-light btn-small">Send</a>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="col s12 l6">
-                        <h4>or check me out on social media</h4>
                     </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email Address</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="message" class="materialize-textarea" length="300"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <a href="#" class="waves-effect waves-light btn-small">Send</a>
+                        </div>
+                    </div>
+                </form>
+                <div class="col s12 l6">
+                    <h4>or check me out on social media</h4>
                 </div>
             </div>
-            <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-light btn-small">Close</a>
-            </div>
         </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-light btn-small">Close</a>
+        </div>
+    </div>
 
 
 
