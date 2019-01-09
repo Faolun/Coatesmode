@@ -4,10 +4,16 @@ body {
     background-color: #36393f;
     color: white;
     overflow-x: hidden;
+    font-size: 16px;
   }
   h1 {
     color: #7289DA;
     font-size: 45px;
+  }
+
+  h5 {
+    color: #7289DA;
+
   }
 
   .modal {
@@ -168,6 +174,10 @@ body {
     margin-right: auto;
     margin-left: auto;
   }
+
+ .hype {
+   color: #7289DA;
+ }
 
   /* PORTFOLIO */
 
