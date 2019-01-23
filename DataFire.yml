@@ -1,0 +1,9 @@
+options:
+  cors: true
+actions:
+  coatesmode_contact: ./actions/coatesmode_contact.js
+paths:
+  /contact:
+    post:
+      action: coatesmode_contact
+      accounts: {}
