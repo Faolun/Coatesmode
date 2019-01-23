@@ -93,7 +93,7 @@
         <div class="modal-content">
             <h1 class="pageHead">Contact</h1>
             <div class="row">
-                <form class="col s12 l6" method="POST" action="https://coatesmode-contact.dev.with-datafire.io/contact">
+                <form class="col s12 l6" id="contactForm" method="POST" action="https://coatesmode-contact.prod.with-datafire.io/contact">
                     <div class="row">
                         <div class="input-field col s6">
                             <input id="first_name" type="text" name="first_name" class="validate">
@@ -108,7 +108,7 @@
                         <div class="input-field col s12">
                             <input id="email" type="email" name="from" class="validate">
                             <label for="email">Email Address</label>
-                            <span class="helper-text" data-error="Please enter a valid email." data-success="right"></span>
+                            <span class="helper-text" data-error="Please enter a valid email." data-success="Valid Email"></span>
                         </div>
                     </div>
                     <div class="row">
@@ -117,12 +117,16 @@
                             <label for="message">Message</label>
                         </div>
                     </div>
+
                     <div class="row">
-                        <div class="col s12">
-                            <button type="submit" class="waves-effect waves-light btn-small">Send</button>
+                        <div class="col s3">
+                            <button type="submit" id="contactSubmit" class="waves-effect waves-light btn-small">Send</button>
                         </div>
+                        <div class="col s9"><p class="center-align"><span id="contactAlert"></span></p></div>
                     </div>
                 </form>
+
+
                 <div class="col s12 l6">
                     <div class="row">
                         <div class="contactText center-align">
@@ -134,7 +138,6 @@
                             <p>Feel free to contact me!</p>
                         </div>
                     </div>
-                    <br>
                     <div class="row">
                         <h5 class="center-align">Or reach out on social media...</h5>
                         <ul class="contactInline center-align">
@@ -149,14 +152,12 @@
                                         aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
-
                 </div>
             </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-light btn-small">Close</a>
+            </div>
         </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-light btn-small">Close</a>
-        </div>
-    </div>
 
 
 
@@ -164,6 +165,9 @@
 <!-- Javascript -->
 <!-- Compiled and minified Materialize JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i"
+    crossorigin="anonymous"></script>
+<script src="./js/contact.js"></script>
 <script src="./js/script.js"></script>
 <script src="./js/indexSpan.js"></script>
 

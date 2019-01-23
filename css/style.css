@@ -315,7 +315,10 @@ body {
 
   .contactText {
    color: #2f3136;
-   
+  }
+
+  #contactAlert {
+    color: green;
   }
 
    /* MEDIA */
