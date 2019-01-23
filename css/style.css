@@ -201,7 +201,6 @@ body {
 
   .portContainer {
     margin-top: -60px;
-    /* margin-right: 300px; */
   }
 
   .portWrapper {
@@ -273,7 +272,52 @@ body {
     margin-right: 5px;
   }
 
-  
+    /* CONTACT MODAL */
+    ul.contactInline li {
+      display: inline;
+      padding: 10px;
+    }
+
+    .contactButton {
+        background-color:#7289DA;
+        padding: 10px;
+      }
+      .contactButton:hover {
+        background-color:#8CA3F4;
+      }
+      .contactButton:focus {
+        background-color:#3F56A7;
+      }
+
+  /* label focus color */
+  .input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+    color: #7289DA !important;
+   }
+
+/* label underline focus color */
+   .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #7289DA !important;
+    box-shadow: 0 1px 0 0 #7289DA !important;
+   }
+  /* label focus color */
+  .input-field input[type=email]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+    color: #7289DA !important;
+   }
+
+/* label underline focus color */
+   .input-field input[type=email]:focus, .materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #7289DA !important;
+    box-shadow: 0 1px 0 0 #7289DA !important;
+   }
+   .modal .modal-footer .btn-small {
+        margin-right: 20px;
+      }
+
+  .contactText {
+   color: white;
+   
+  }
+
    /* MEDIA */
 
   @media screen and (max-width: 993px) {
