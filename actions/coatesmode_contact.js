@@ -11,7 +11,9 @@ module.exports = new datafire.Action({
       subject: input.first_name + " " + input.last_name + " contacted you via Coatesmode.com",
       body: input.message,
     }, context);
-    let message = await google_gmail.users.messages.send({}, context);
+    let message = await google_gmail.users.messages.send({
+      userId: "james.coatesiii@gmail.com",
+    }, context);
     return message;
   },
 });
