@@ -38,6 +38,6 @@ module.exports = new datafire.Action({
         raw: message,
       },
     }, context);
-    window.location.href = 'http://www.coatesmode.com';
+    return window.location.href = 'http://www.coatesmode.com';
   },
 });
