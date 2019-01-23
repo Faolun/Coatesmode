@@ -4,6 +4,19 @@ let datafire = require('datafire');
 let google_gmail = require('@datafire/google_gmail').actions;
 module.exports = new datafire.Action({
   description: "Contact Backend for Website",
+  inputs: [{
+    type: "string",
+    title: "first_name"
+  }, {
+    type: "string",
+    title: "last_name"
+  }, {
+    type: "string",
+    title: "from"
+  }, {
+    type: "string",
+    title: "message"
+  }],
   handler: async (input, context) => {
     let encodedMessage = await google_gmail.buildMessage({
       to: "james.coatesiii@gmail.com",
