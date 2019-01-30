@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -5,14 +9,16 @@ body {
     color: white;
     overflow-x: hidden;
     font-size: 16px;
+    height: 100%;
   }
   h1 {
     color: #7289DA;
-    font-size: 45px;
+    font-size: 40px;
   }
 
   h5 {
     color: #7289DA;
+
 
   }
 
@@ -20,6 +26,13 @@ body {
     color: black;
   }
 
+  .pageHead {
+    font-family: 'Share Tech Mono', monospace;
+    color:#ffffff;
+    text-shadow: 2px 2px #7289DA;
+  }
+
+  
   /* SIDEBAR */
 
   .sidebar {
@@ -161,12 +174,25 @@ body {
 
   /* ABOUT */
 
-  #aboutPortrait {
-    max-width:100%;
-    max-height:100%;
+  .parallax-container {
+    height: 400px;
+  }
+  .aboutParHeader {
+    color: #7289DA;
+    font-weight: bold;
+  }
+  .aboutPara{
+    text-indent: 30px;
+    padding: 0 30px;
+    font-size: 20px;
   }
 
-
+  #aboutContainer{
+    padding: 40px 0 40px 0;
+  }
+  #quoteText {
+    color: white;
+  }
   /* SKILLS */
 
   canvas {
@@ -272,7 +298,14 @@ body {
     margin-right: 5px;
   }
 
+  .workBanner {
+    font-size: 24px;
+    background-color: #7289DA;
+    padding: 30px;
+  }
+
     /* CONTACT MODAL */
+    
     ul.contactInline li {
       display: inline;
       padding: 10px;
@@ -406,4 +439,20 @@ body {
       height: 300px;
     }
 
+  }
+
+  /* TEST */
+
+  .preloader-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;	
   }

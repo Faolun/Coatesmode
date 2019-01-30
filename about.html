@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>James Coates - Full Stack Developer</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- CSS -->
     <!-- Compiled and minified Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
@@ -19,23 +20,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body id="aboutBG">
 
     <!-- responsive navbar -->
 
     <div class="sidebar">
         <a active href="./index.html" class="transition"><img src="./assets/images/beardLogo.svg" alt="Logo" class="circle"></a>
         <div class="pageLinks">
-            <a class="active transition" href="./about.html">About</a>
+            <a class="active" href="#">About</a>
             <a href="./skills.html" class="transition">Skills</a>
-            <a href="./portfolio.html" class="transition">Portfolio</a></li>
+            <a href="./work.html" class="transition">Work</a></li>
             <a class="modal-trigger" href="#contactModal">Contact</a>
         </div>
         <div class="webLinks hide-on-small-only">
-            <a href="https://github.com/Faolun"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://github.com/Faolun" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
             <!-- <a href=""><i class="fab fa-gitlab" aria-hidden="true"></i></a> -->
-            <a href="https://www.linkedin.com/in/james-coates-354a37140/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/james_coatesiii"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/james-coates-354a37140/" target="_blank"><i class="fab fa-linkedin-in"
+                    aria-hidden="true"></i></a>
+            <a href="https://twitter.com/james_coatesiii" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
         </div>
     </div>
 
@@ -43,99 +45,132 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col">
-                <h1 class="pageHead">About</h1>
+            <div class="col s12">
+                <h1 class="pageHead">ABOUT</h1>
             </div>
         </div>
+    </div>
+    <div class="parallax-container center valign-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col s6">
+                    <h5 id="quoteText"><i>“Take your idea and hit it with a sledgehammer, it's going to shake off the
+                            weaker connected ideas, but if it still stands, you have a foundation for something that
+                            will work.” ~ Mel Brooks</i></h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax">
+            <img src="./assets/images/aboutPortrait.jpg">
+        </div>
+    </div>
+    <div class="container-fluid" id="aboutContainer">
         <div class="row">
-            <div class="col s12 l8">
-
-                <p> Grew up in the mean roads of rural New Jersey on a hilltop horse farm. Graduated from Kutztown
-                    University with a BA in English before setting off into the world as a copywriter. A lover of
-                    logic, I myself into working as a back-end data manager.
-
-                    I spend the majority of my free time with my wife and one year old daughter. I enjoy terrible
-                    movies, terrible food, and top shelf single malt scotch. To me, a good time with friends is better
-                    spent in with a table top or a video game, but I am never one to turn down the adventure of
-                    backpacking or taking a road trip into the great American wilderness.
-                </p>
+            <div class="col l6 s12">
+                <h5 class="aboutParHeader center-align">
+                    Who are you?
+                </h5>
+                <p class="aboutPara">My youth was spent in the backwoods of the New Jersey Northern Highlands. My father being an electrician, and my mother, a computer administrator at the local college, coupled with the isolation of a remote horse farm; technology became a cornerstone of my adolescence. After graduating from Kutztown University with a BA in Professional Writing, I set off into the world as a copywriter.</p>
+                <p class="aboutPara">Wanting to obtain more technical skills, I took a position as a back-end data manager. At the time, I
+                    didn’t think that it would be my stepping stone into a new career. I sought to
+                    increase my abilities further by enrolling in Rutgers Full Stack Development program. I love to
+                    code and I love solving problems. I relish in the creativity that can come from understanding structures and how to work around their limitations.</p>
+                <p class="aboutPara">I spend the majority of my free time with my wife and daughter. I enjoy terrible
+                    movies, terrible food, and premium single malt scotch. To me, a good time with friends is better
+                    spent inside playing games, but I will never turn down the adventure of overnight backpacking or
+                    taking a road trip into the great American wilderness. </p>
             </div>
-            <div class="col s12 l4">
-                <img src="https://via.placeholder.com/450" alt="Me" id="aboutPortrait">
+            <div class="col l6 s12">
+                <h5 class="aboutParHeader center-align">
+                    What can you do for me?
+                </h5>
+                <p class="aboutPara">I solve your problems. I help you create. I use my skills to compose your ideas.</p>
+                <p class="aboutPara">I will take your needs, at any level, and make a plan from conceptualization, to minimum viable product, to future features. All the while planning for every eventuality, delay, and issue that may come up in the process. This is Coatesmode.</p>
+                <p class="aboutPara"><i>Concieve, Plan, Execute.</i></p>
+                <p class="aboutPara">Whether you are looking with help with your app, need a business website on the fly, or just need code to sort through your database...</p>
+                <p class="aboutPara">I already <a href="skills.html">know</a> we can make great <a href="work.html">things</a> together.</p>
             </div>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="./assets/images/aboutYosemite.jpg">
         </div>
     </div>
 
     <!-- Contact Modal  -->
     <div id="contactModal" class="modal">
-            <div class="modal-content">
-                <h1 class="pageHead">Contact</h1>
-                <div class="row">
-                    <form class="col s12 l6" id="contactForm" method="POST" action="https://coatesmode-contact.prod.with-datafire.io/contact">
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input id="first_name" type="text" name="first_name" class="validate">
-                                <label for="first_name">First Name</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input id="last_name" type="text" name="last_name" class="validate">
-                                <label for="last_name">Last Name</label>
-                            </div>
+        <div class="modal-content">
+            <h1 class="pageHead">CONTACT</h1>
+            <div class="row">
+                <form class="col s12 l6" id="contactForm" method="POST" action="https://coatesmode-contact.prod.with-datafire.io/contact">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" name="first_name" class="validate">
+                            <label for="first_name">First Name</label>
                         </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="email" type="email" name="from" class="validate">
-                                <label for="email">Email Address</label>
-                                <span class="helper-text" data-error="Please enter a valid email." data-success="Valid Email"></span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <textarea id="message" name="message" class="materialize-textarea" length="300"></textarea>
-                                <label for="message">Message</label>
-                            </div>
-                        </div>
-    
-                        <div class="row">
-                            <div class="col s3">
-                                <button type="submit" id="contactSubmit" class="waves-effect waves-light btn-small">Send</button>
-                            </div>
-                            <div class="col s9"><p class="center-align"><span id="contactAlert"></span></p></div>
-                        </div>
-                    </form>
-    
-    
-                    <div class="col s12 l6">
-                        <div class="row">
-                            <div class="contactText center-align">
-                                <p>Questions?</p>
-                                <p>Need a website fast?</p>
-                                <p>Have an idea for an app?</p>
-                                <p>Need to get your project off the ground?</p>
-                                <p>Looking to add someone to your team?</p>
-                                <p>Feel free to contact me!</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <h5 class="center-align">Or reach out on social media...</h5>
-                            <ul class="contactInline center-align">
-                                <li class="contact"><a class="btn-floating btn-large waves-effect waves-light contactButton"
-                                        href="https://github.com/Faolun" target="_blank"><i class="fab fa-github"
-                                            aria-hidden="true"></i></a></li>
-                                <li class="contact"><a class="btn-floating btn-large waves-effect waves-light contactButton"
-                                        href="https://www.linkedin.com/in/james-coates-354a37140/" target="_blank"><i class="fab fa-linkedin-in"
-                                            aria-hidden="true"></i></a></li>
-                                <li class="contact"><a class="btn-floating btn-large waves-effect waves-light contactButton"
-                                        href="https://twitter.com/james_coatesiii" target="_blank"><i class="fab fa-twitter"
-                                            aria-hidden="true"></i></a></li>
-                            </ul>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" name="last_name" class="validate">
+                            <label for="last_name">Last Name</label>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <a href="#!" class="modal-close waves-effect waves-light btn-small">Close</a>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" name="from" class="validate">
+                            <label for="email">Email Address</label>
+                            <span class="helper-text" data-error="Please enter a valid email." data-success="Valid Email"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="message" name="message" class="materialize-textarea" length="300"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s3">
+                            <button type="submit" id="contactSubmit" class="waves-effect waves-light btn-small">Send</button>
+                        </div>
+                        <div class="col s9">
+                            <p class="center-align"><span id="contactAlert"></span></p>
+                        </div>
+                    </div>
+                </form>
+
+
+                <div class="col s12 l6">
+                    <div class="row">
+                        <div class="contactText center-align">
+                            <p>Questions?</p>
+                            <p>Need a website fast?</p>
+                            <p>Have an idea for an app?</p>
+                            <p>Need to get your project off the ground?</p>
+                            <p>Looking to add someone to your team?</p>
+                            <p>Feel free to contact me!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h5 class="center-align">Or reach out on social media...</h5>
+                        <ul class="contactInline center-align">
+                            <li class="contact"><a class="btn-floating btn-large waves-effect waves-light contactButton"
+                                    href="https://github.com/Faolun" target="_blank"><i class="fab fa-github"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="contact"><a class="btn-floating btn-large waves-effect waves-light contactButton"
+                                    href="https://www.linkedin.com/in/james-coates-354a37140/" target="_blank"><i class="fab fa-linkedin-in"
+                                        aria-hidden="true"></i></a></li>
+                            <li class="contact"><a class="btn-floating btn-large waves-effect waves-light contactButton"
+                                    href="https://twitter.com/james_coatesiii" target="_blank"><i class="fab fa-twitter"
+                                        aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-light btn-small">Close</a>
+            </div>
+        </div>
 
 </body>
 <!-- Javascript -->

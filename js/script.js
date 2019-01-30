@@ -10,7 +10,7 @@ $(document).ready(function (){
 function redirectPage() {
     window.location = linkLocation;
 }
-})
+});
 
 $(document).ready(function () {
   if (!$('#myCanvas').tagcanvas({
@@ -52,6 +52,12 @@ $(document).ready(function () {
 });
 $(document).ready(function(){
   $('.modal').modal();
+}); 
+$(document).ready(function(){
+  $('.parallax').parallax();
+});
+$(document).ready(function(){
+  $('.tap-target').tapTarget();
 });
 
 

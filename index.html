@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>James Coates - Full Stack Developer</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- CSS -->
     <!-- Compiled and minified Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
@@ -22,25 +23,23 @@
 
 <body>
 
-    <!-- responsive navbar -->
-
     <div class="sidebar">
-        <a class="transition" href="./index.html"><img src="./assets/images/beardLogo.svg" alt="Logo" class="circle"></a>
+        <a href="#"><img src="./assets/images/beardLogo.svg" alt="Logo" class="circle"></a>
         <div class="pageLinks">
             <a href="./about.html" class="transition">About</a>
             <a href="./skills.html" class="transition">Skills</a>
-            <a href="./portfolio.html" class="transition">Portfolio</a>
+            <a href="./work.html" class="transition">Work</a>
             <a class="modal-trigger" href="#contactModal">Contact</a>
         </div>
         <div class="webLinks hide-on-small-only">
-            <a href="https://github.com/Faolun"><i class="fab fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/james-coates-354a37140/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/james_coatesiii"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://github.com/Faolun" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/james-coates-354a37140/" target="_blank"><i class="fab fa-linkedin-in"
+                    aria-hidden="true"></i></a>
+            <a href="https://twitter.com/james_coatesiii" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
         </div>
     </div>
 
     <!-- Content -->
-
     <div class="container-fluid">
         <video autoplay muted loop id="myVideo">
             <source src="./assets/images/Walking-Heads.mp4" type="video/mp4">
@@ -69,11 +68,11 @@
                             <div class="col s12">
                                 <div class="portInlineWrapper">
                                     <ul class="indexPortInline">
-                                        <li><a href="./portfolio.html"><img class="indexPortfolioExample" src="./assets/images/americanHouse.png"
+                                        <li><a href="./work.html"><img class="indexPortfolioExample" src="./assets/images/americanHouse.png"
                                                     alt="AmericanHouse"></a></li>
-                                        <li><a href="./portfolio.html"><img class="indexPortfolioExample" src="./assets/images/forkcast.png"
+                                        <li><a href="./work.html"><img class="indexPortfolioExample" src="./assets/images/forkcast.png"
                                                     alt="AmericanHouse"></a></li>
-                                        <li><a href="./portfolio.html"><img class="indexPortfolioExample" src="./assets/images/bAmazon.png"
+                                        <li><a href="./work.html"><img class="indexPortfolioExample" src="./assets/images/bAmazon.png"
                                                     alt="AmericanHouse"></a></li>
                                     </ul>
                                 </div>
@@ -88,76 +87,78 @@
         </div>
     </div>
 
-    <!-- Contact Modal  -->
-    <div id="contactModal" class="modal">
-        <div class="modal-content">
-            <h1 class="pageHead">Contact</h1>
-            <div class="row">
-                <form class="col s12 l6" id="contactForm" method="POST" action="https://coatesmode-contact.prod.with-datafire.io/contact">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <input id="first_name" type="text" name="first_name" class="validate">
-                            <label for="first_name">First Name</label>
+        <!-- Contact Modal  -->
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <h1 class="pageHead">CONTACT</h1>
+                <div class="row">
+                    <form class="col s12 l6" id="contactForm" method="POST" action="https://coatesmode-contact.prod.with-datafire.io/contact">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name" type="text" name="first_name" class="validate">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text" name="last_name" class="validate">
+                                <label for="last_name">Last Name</label>
+                            </div>
                         </div>
-                        <div class="input-field col s6">
-                            <input id="last_name" type="text" name="last_name" class="validate">
-                            <label for="last_name">Last Name</label>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" name="from" class="validate">
+                                <label for="email">Email Address</label>
+                                <span class="helper-text" data-error="Please enter a valid email." data-success="Valid Email"></span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="email" type="email" name="from" class="validate">
-                            <label for="email">Email Address</label>
-                            <span class="helper-text" data-error="Please enter a valid email." data-success="Valid Email"></span>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="message" name="message" class="materialize-textarea" length="300"></textarea>
+                                <label for="message">Message</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <textarea id="message" name="message" class="materialize-textarea" length="300"></textarea>
-                            <label for="message">Message</label>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col s3">
-                            <button type="submit" id="contactSubmit" class="waves-effect waves-light btn-small">Send</button>
+                        <div class="row">
+                            <div class="col s3">
+                                <button type="submit" id="contactSubmit" class="waves-effect waves-light btn-small">Send</button>
+                            </div>
+                            <div class="col s9">
+                                <p class="center-align"><span id="contactAlert"></span></p>
+                            </div>
                         </div>
-                        <div class="col s9"><p class="center-align"><span id="contactAlert"></span></p></div>
-                    </div>
-                </form>
+                    </form>
 
 
-                <div class="col s12 l6">
-                    <div class="row">
-                        <div class="contactText center-align">
-                            <p>Questions?</p>
-                            <p>Need a website fast?</p>
-                            <p>Have an idea for an app?</p>
-                            <p>Need to get your project off the ground?</p>
-                            <p>Looking to add someone to your team?</p>
-                            <p>Feel free to contact me!</p>
+                    <div class="col s12 l6">
+                        <div class="row">
+                            <div class="contactText center-align">
+                                <p>Questions?</p>
+                                <p>Need a website fast?</p>
+                                <p>Have an idea for an app?</p>
+                                <p>Need to get your project off the ground?</p>
+                                <p>Looking to add someone to your team?</p>
+                                <p>Feel free to contact me!</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <h5 class="center-align">Or reach out on social media...</h5>
-                        <ul class="contactInline center-align">
-                            <li class="contact"><a class="btn-floating btn-large waves-effect waves-light contactButton"
-                                    href="https://github.com/Faolun" target="_blank"><i class="fab fa-github"
-                                        aria-hidden="true"></i></a></li>
-                            <li class="contact"><a class="btn-floating btn-large waves-effect waves-light contactButton"
-                                    href="https://www.linkedin.com/in/james-coates-354a37140/" target="_blank"><i class="fab fa-linkedin-in"
-                                        aria-hidden="true"></i></a></li>
-                            <li class="contact"><a class="btn-floating btn-large waves-effect waves-light contactButton"
-                                    href="https://twitter.com/james_coatesiii" target="_blank"><i class="fab fa-twitter"
-                                        aria-hidden="true"></i></a></li>
-                        </ul>
+                        <div class="row">
+                            <h5 class="center-align">Or reach out on social media...</h5>
+                            <ul class="contactInline center-align">
+                                <li class="contact"><a class="btn-floating btn-large waves-effect waves-light contactButton"
+                                        href="https://github.com/Faolun" target="_blank"><i class="fab fa-github"
+                                            aria-hidden="true"></i></a></li>
+                                <li class="contact"><a class="btn-floating btn-large waves-effect waves-light contactButton"
+                                        href="https://www.linkedin.com/in/james-coates-354a37140/" target="_blank"><i
+                                            class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                                <li class="contact"><a class="btn-floating btn-large waves-effect waves-light contactButton"
+                                        href="https://twitter.com/james_coatesiii" target="_blank"><i class="fab fa-twitter"
+                                            aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-light btn-small">Close</a>
+                </div>
             </div>
-            <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-light btn-small">Close</a>
-            </div>
-        </div>
 
 
 
