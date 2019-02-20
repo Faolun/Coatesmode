@@ -3,5 +3,4 @@ $("#contactSubmit").on("click", function () {
         $("#contactAlert").text("✔ Message Sent, Thank You!");
         $('#contactForm').resetForm();
     });
-
 });
