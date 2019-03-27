@@ -5,21 +5,22 @@ let google_gmail = require('@datafire/google_gmail').actions;
 module.exports = new datafire.Action({
   description: "Contact Backend for Website",
   inputs: [{
-    type: "string",
     title: "first_name",
-    maxLength: 254
+    maxLength: 254,
+    type: "string"
   }, {
     type: "string",
-    title: "last_name",
-    maxLength: 254
+    maxLength: 254,
+    title: "last_name"
   }, {
     type: "string",
+    maxLength: 254,
     title: "from",
-    maxLength: 254
+    pattern: ".*@.*\\..*"
   }, {
     type: "string",
-    title: "message",
-    maxLength: 5000
+    maxLength: 5000,
+    title: "message"
   }],
   handler: async (input, context) => {
     
@@ -32,7 +33,7 @@ module.exports = new datafire.Action({
       subject: input.first_name + " " + input.last_name + " [ " + input.from + " ] contacted you via Coatesmode.com",
       body: input.message,
     }, context);
-    let send = await google_gmail.users.messages.send({
+    let sent = await google_gmail.users.messages.send({
       userId: "me",
       body: {
         raw: message,
