@@ -1,0 +1,18 @@
+options:
+  cors: true
+actions:
+  coatesmode_contact: ./actions/coatesmode_contact.js
+paths:
+  /contact:
+    post:
+      action: coatesmode_contact
+      accounts: {}
+tests:
+  test:
+    action: coatesmode_contact
+    input:
+      first_name: Test
+      last_name: TEST
+      from: test@test.com
+      message: This is a test.
+    accounts: {}
