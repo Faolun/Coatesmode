@@ -15,7 +15,7 @@ $("#contactSubmit").on("click", function (e) {
     var data = {
        name : name,
        email : email,
-       mesasge : message
+       message : message
      };
 
     $.ajax({
@@ -29,12 +29,15 @@ $("#contactSubmit").on("click", function (e) {
       
       success: function () {
         // clear form and show a success message
-        alert("Successfull");
-        document.getElementById("contactForm").reset();
-    location.reload();
+    //     alert("Successfull");
+    //     document.getElementById("contactForm").reset();
+    // location.reload();
+
+        $("#contactAlert").text("✔ Message Sent, Thank You!");
+        $('#contactForm').resetForm();
       },
       error: function () {
         // show an error message
-        alert("UnSuccessfull");
+        alert("Our Amazon Web Service has returned an error, please contact us at contact@coatesmode.com, thank you.");
       }});
   });
