@@ -38,6 +38,6 @@ $("#contactSubmit").on("click", function (e) {
       },
       error: function () {
         // show an error message
-        alert("Our Amazon Web Service has returned an error, please contact us at contact@coatesmode.com, thank you.");
+        alert("Our Amazon Web Service has returned an error, please download our resume to find more contact info, thank you.");
       }});
   });
