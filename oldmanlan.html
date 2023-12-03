@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Old Man LAN</title>
+    <!-- CSS -->
+    <!-- Compiled and minified Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Share+Tech+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/oml.css">
+</head>
+
+<body>
+      <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <ul id="nav-mobile">
+                <li><a href="#splashSec">Home</a></li>
+                <li><a href="#aboutSec">About</a></li>
+                <li><a href="#gamesSec">Games</a></li>
+                <li><a href="#schedSec">Schedule</a></li>
+                <li><a href="#directionsSec">Directions</a></li>
+                <li><a href="#FAQSec">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="splashSec">
+        <video autoplay muted loop id="myVideo">
+            <source src="./assets/images/OMLBackground.mp4" type="video/mp4">
+        </video>
+    <div id='canvasContainer'>
+      <div class="row">
+        <canvas id="canvas1"></canvas>
+        <div class="overlay-content">
+          <div class="imgContainer">
+            <input type="image" id="playButton" class="tooltipped overlay-content" data-position="top"
+              data-tooltip="Do you dare set the vibe?" src="./assets/images/OML.png" />
+          </div>
+        </div>
+        <audio id="audioPlayer"></audio>
+      </div>
+    
+      <div class="row">
+        <div class="splashtextContainer">
+          <h1 class="white-text" style="font-family: 'Big Shoulders Stencil Display', sans-serif; font-size: 75px;">OLD MAN LAN</h1>
+          <h5 class="white-text">12/29 - 12/31</h5>
+        </div>
+      </div>
+    </div>
+    </section>
+    
+    <section id="aboutSec">
+      <h1 class="white-text" style="font-family: 'Big Shoulders Stencil Display', sans-serif;">About</h1>
+      <div class="row">
+        <div class="col s1"></div>
+        <div class="col s5">
+          <div class="row">
+            <iframe width="800" height="600" src="https://www.youtube.com/embed/4uAcwsOX8zU">
+            </iframe>
+          </div>
+          <div class="row">
+            <p>Timelapse of the first Old Man LAN (March 2015)</p>
+          </div>
+        </div>
+        <div class="col s5">
+          <div class="row">
+          <h3>Chasing that Dragon since 2008.</h3>
+          <p>
+            - 16 friends signed-in already waiting for you to play -</p><p>- Split screens -</p><p>- Couch Co-Op -</p><p>- Game lobby trash talk -</p><p>- Long nights spent gaming with friends -</p><p class="blue-text">All lost to time.</p>
+          </div>
+        <div class="row">
+            <p>
+              Old Man LAN serves as one of the last bastions of old school communal gaming experiences. Relive the days of gaming with wreckless abandon and stuffing your face full of garbage. 
+              Bask in the glory of limitless gaming. Initiated in 2015, we serve to reignite the fires created during the golden era of gaming, bringing together those with a shared love for classic titles that have left an indelible mark on your gaming DNA. The event is a haven for those seeking to immerse themselves in the active physical recreation. From the iconic LAN games of the '90s and early 2000s LAN party staples to the modern Boomeresque titles, Old Man LAN exists to allow you to relive the pixelated fever dreams that fueled your passions in the first place.
+
+              The atmosphere is electric, charged with an virulent blend of excitement and nostalgia as you and your fellow gamers share stories and recount the thrill of combatting friends without an internet connection. Old Man LAN isn't just a gathering; it's a pilgrimage for those who appreciate the communal spirit that defined the early days of LAN gaming. In a culture constantly racing towards another video game collapse, Old Man LAN stands as a testament to the cornerstones, long paved over, that hold the pillars of gaming culture. </p>
+        </div>
+        <div class="col s1"></div>
+      </div>
+      </div>
+    </section>
+
+    <section id="gamesSec">
+        <h1 class="white-text" style="font-family: 'Big Shoulders Stencil Display', sans-serif;">Games</h1>
+        <div class="row">
+          <div class="cardContainer">
+          <div class="card3d"><img src="./assets/images/gCards/ArmagedTron.png" width="180" alt="ArmagedTron"></div>
+          <div class="card3d"><img src="./assets/images/gCards/Blur.png" width="180" alt="Blur"></div>
+          <div class="card3d"><img src="./assets/images/gCards/Brawlhalla.png" alt="Brawlhalla" width="180"></div>
+          <div class="card3d"><img src="./assets/images/gCards/Conan.png" alt="Conan" width="180"></div>
+          <div class="card3d"><img src="./assets/images/gCards/DeepRock.png" alt="DeepRock" width="180"></div>
+          <div class="card3d"><img src="./assets/images/gCards/fistful.png" alt="fistful" width="180"></div>
+          <div class="card3d"><img src="./assets/images/gCards/Goldeneye.png" alt="Goldeneye" width="180"></div>
+          <div class="card3d"><img src="./assets/images/gCards/Halo.png" width="180" alt="Halo"></div>
+          <div class="card3d"><img src="./assets/images/gCards/InsurgencySandstorm.jpg" alt="InsurgencySandstorm" width="180"></div>
+          <div class="card3d"><img src="./assets/images/gCards/Payday2.png" alt="Payday2" width="180"></div>
+          <div class="card3d"><img src="./assets/images/gCards/RocketLeague.png" alt="RocketLeague" width="180"></div>
+          <div class="card3d"><img src="./assets/images/gCards/TeamFortress2.png" alt="TeamFortress2" width="180"></div>
+          <div class="card3d"><img src="./assets/images/gCards/TheShip.png" alt="TheShip" width="180"></div>
+          <div class="card3d"><img src="./assets/images/gCards/Terraria.png" alt="Terraria" width="180"></div>
+          <div class="card3d"><img src="./assets/images/gCards/Titanfall2.jpg" alt="Titanfall2" width="180"></div>
+          <div class="card3d"><img src="./assets/images/gCards/UnrealT.png" alt="UnrealT" width="180"></div>
+          <div class="card3d"><img src="./assets/images/gCards/UT2004.png" alt="UT2004" width="180"></div>
+          <div class="card3d"><img src="./assets/images/gCards/VRising.jpg" alt="VRising" width="180"></div>
+          <div class="card3d"><img src="./assets/images/gCards/Warframe.png" alt="Warframe" width="180"></div>
+          <div class="card3d"><img src="./assets/images/gCards/Zomboid.png" alt="Zomboid" width="180"></div>
+        </div>
+        </div>
+    </section>   
+    <section id="schedSec">
+        <h1 class="white-text" style="font-family: 'Big Shoulders Stencil Display', sans-serif;">Schedule</h1>
+        <iframe src="https://calendar.google.com/calendar/embed?height=720&wkst=1&bgcolor=%233F51B5&ctz=America%2FNew_York&mode=AGENDA&showTz=1&showDate=1&showNav=1&showTabs=1&showCalendars=0&showPrint=0&showTitle=1&src=YnZoN2tqYmc4b29laDdndWFiODc5OGQ1dWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%233F51B5" style="border-width:0" width="1280" height="720" frameborder="0" scrolling="no"></iframe>
+    </section>   
+    <section id="directionsSec">
+        <h1 class="white-text" style="font-family: 'Big Shoulders Stencil Display', sans-serif;">Directions</h1>
+        <div class="row">
+        <div class="col s1"></div>
+            <div class="col s5">
+                <h4>1) Address:</h4>
+                <a href="https://maps.app.goo.gl/nKd3korEk46GgPyF7" target="_blank">
+                <h6>17 Prince Edward Road, Great Meadows, NJ 07838</h6>
+            </a>
+                <h4>2) Unloading:</h4>
+                <h6>Pull up to the furthest garage door and deposit your belongings in the garage staging area. Do not use the front door, the bluestone path is slippery in winter!</h6>
+                <h4>3)Parking:</h4>
+                <h6>Do not block the driveway so people can load and unload. If weather permits and the ground is not muddy. Park perpendicular to the driveway on the lawn opposite of the house (yellow area). Pull up to the hedges to leave room for people to park behind you if possible, especially if you are spending the night.  If weather is not permitting, parking will have to be solely on the street. Please do not block mailboxes. If it snows, please carpool, if possible, as parking may be taken up by plow walls.</h6>
+            </div>
+            <div class="col s5">
+              <img class="responsive-img" src="assets/images/park.PNG" alt="Parking Pic">
+            </div>
+            <div class="col s1"></div>
+        </div>
+    </div>
+    </section>   
+    <section id="FAQSec">
+        <h1 class="white-text" style="font-family: 'Big Shoulders Stencil Display', sans-serif;">FAQ</h1>
+        <div class="container">
+            <div class="row">
+                <!-- Left Column (6 columns) -->
+                <div class="col s6">
+                    <div class="row">
+                        <div class="button-col">
+                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" onclick="askQuestion(this)" text="LAN stands for Local Area Network. The party part means party :). It's a get-together where we hook our computers/consoles together on the same network to play games and share files. With dedicated servers hosting games and everyone being on the same network, games played will have zero ping/lag. Otherwise, its a great excuse to hang out.">What's a LAN party?</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button-col">
+                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" onclick="askQuestion(this)" text="We game! Keep an ear out for events and group gaming, otherwise grab anybody to play any multiplayer game you want! Anytime!">What do I do there?</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button-col">
+                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" onclick="askQuestion(this)" text="If you have ethernet switches, lengthy ethernet cables, surge protectors, gaming consoles, extra controllers, projectors, spare pcs, or anything else you might want to bring related to tech (VR headsets, demo equipment, etc...), let me know through direct message on Discord. Otherwise, come and game!">How can I help?</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button-col">
+                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" onclick="askQuestion(this)" text="Yes. This is an event. If your schedule cannot accomodate spending or revisiting two or three days playing games, I recommend you come Saturday as that typically is the main event day. Try to make it for as much of the day as possible.">Three Days?</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button-col">
+                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" onclick="askQuestion(this)" text="There will be areas to sleep in three bedrooms and the paritally basement. Bring your own pillows, sleeping bags, and/or cots or air mattresses for your own comfort. A shower will also be available if you feel grody (bring your own toiletries). Bring your own snacks as well as drinks. Alcohol is fine of course, don't overdo it. There are a few liquor stores nearby. As for meals: likely a huge pizza order for Saturday night though nearby Hackettstown (15 min) has many fastfood and restaruants. There are extremely few options for delivery so there will likely be food runs around lunch and dinner. If this interests you, bring cash. Otherwise fend for yourself. Food for sharing is always more than welcome. If desperate, there are 24 hour Quikchecks near by.">Sleep? Food? Drinks? Booze?</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button-col">
+                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" id="btnBringQ" onclick="askQuestion(this)" text="Your PC of course. Make sure your games are pre-installed if possible. With that, your monitor, cables, keyboard and mouse. If you want to be more comfortable, bring your chair. If you have consoles you want to play on, bring those, with controllers and cables and games.">What should I bring?</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button-col">
+                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" onclick="askQuestion(this)" text="I have a lot of spare cables, maybe a spare keyboard or monitor. Try not to depend on it. Nearby Nykuns General store literally has most everyhing related to snack food, deli, hot food, hygiene, cash, drinks and booze. Otherwise, wait for a food run to Hackettstown where they have Staples, Walmart, Target, ShopRite, etc...">What if I forget something?</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button-col">
+                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" onclick="askQuestion(this)" text="We play a plethora, if not a majority, of older games that can be played on literal toasters. The name Old Man LAN comes from the idea that we play older games.">What if my PC sucks?</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button-col">
+                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" onclick="askQuestion(this)" text="Yes. It's wise to remove your graphics card from the motherboard and either put it in an anti-static bag or a non-conductive container before putting it in your car. It's 16 pin connection is the most likely part to break due to road trauma. Place your tower against the seat, cover with a blanket / cloth, place your monitor screenside facing the cloth and seatbelt both in place.">Any suggestions for moving my PC?</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button-col">
+                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" onclick="askQuestion(this)" text="Space is an issue, I may have only room for 1 24 or 27 inch monitor per person. Feel free to bring 2 in case I am wrong. Otherwise, you get a small space and whatever you put in it is your business. Anything you can't fit will need to be stored in your car.">How many monitors/ peripherals can I bring?</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button-col">
+                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" onclick="askQuestion(this)" text="Rules are pretty simple... Don't fuck up my house. Don't be a dick. Nothing illegal.">Any rules?</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button-col">
+                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" onclick="askQuestion(this)" text="I have cats that stay upstairs and a very friendly / energetic medium sized dog (Sadie) that will be hanging out with us. Keep your cables tight to the table so they dont get pulled off by puppy paws. We will have tape. If you are spending the night and have allergies, neither frequents the finished basement.">Anything else I should know?</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column (6 columns) -->
+                <div class="col s6">
+                    <div class="row">
+                        <div class="card-panel transparent-card">
+                            <span id="questionText">...</span>
+                        </div>
+                    </div>
+                    <!-- Transparent Card Panel -->
+                    <div class="card-panel transparent-card">
+                        <span id="answerText">Ask away.</span>
+                    </div>
+                    <button class="waves-effect waves-light btn blue darken-4 modal-trigger" id="modalChecklistBtn" data-target="cbModal" style="display:none;">A checklist to help you out!</button>
+
+                </div>
+            </div>
+        </div>
+
+          <!-- Modal Structure -->
+  <div id="cbModal" class="modal">
+    <div class="modal-content">
+      <h4>Checklist!</h4>
+      <p>Warning, will not save on exit from site.</p>
+      <div class="container">
+        <div class="row">
+            <div class="col s6">
+                <h4>Gaming</h4>
+                <form action="#" class="left-align">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Computer or Laptop</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Power Cable</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Keyboard / Mouse / Controller (Batteries!)</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Monitor</span>
+                      </label>
+                    </p>
+                    <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span>Monitor Cables</span>
+                        </label>
+                      </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Headphones / Headset</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Ethernet Cord</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Mousepad</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Chair (optional)</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Deoderant (not optional)</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Extra gaming / networking tech if you have it (optional)</span>
+                      </label>
+                    </p>
+                    <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span>Snacks</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span>Drinks</span>
+                        </label>
+                      </p>
+                  </form>
+            </div>
+            <div class="col s6">
+                <h4>Sleep</h4>
+                <form action="#" class="left-align">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Comfort Clothing / Pajamas</span>
+                      </label>
+                    </p>
+                    <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span>Pillow</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span>Bedding / Sleeping Bag</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span>Cot / Air Mattress (optional)</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span>Toiletries</span>
+                        </label>
+                      </p>
+                </form>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+    </section>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i" crossorigin="anonymous"></script>
+<script src="./js/oml.js"></script>
+</html>
