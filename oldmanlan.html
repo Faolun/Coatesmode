@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Share+Tech+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7"
@@ -35,6 +36,10 @@
         </div>
     </nav>
     <section id="splashSec">
+      <div class="fragmess">
+        <div id="snow" data-count="200"></div> <!--Snow effect for Fragmess-->
+        <h1 class="fragmessHeader">FRAGMESS</h1>
+      </div>
         <video autoplay muted loop id="myVideo">
             <source src="./assets/images/OMLBackground.mp4" type="video/mp4">
         </video>
@@ -53,7 +58,7 @@
       <div class="row">
         <div class="splashtextContainer">
           <h1 class="white-text" style="font-family: 'Big Shoulders Stencil Display', sans-serif; font-size: 75px;">OLD MAN LAN</h1>
-          <h5 class="white-text">03 | 23 | 24 </h5>
+          <h5 class="white-text">12 | 07 | 24</h5>
         </div>
       </div>
     </div>
@@ -62,8 +67,7 @@
     <section id="aboutSec">
       <h1 class="white-text" style="font-family: 'Big Shoulders Stencil Display', sans-serif;">About</h1>
       <div class="row">
-        <div class="col s1"></div>
-        <div class="col s5">
+        <div class="col s12 l5 offset-l1">
           <div class="row">
             <iframe width="800" height="600" src="https://www.youtube.com/embed/4uAcwsOX8zU">
             </iframe>
@@ -72,7 +76,7 @@
             <p>Timelapse of the first Old Man LAN (March 2015)</p>
           </div>
         </div>
-        <div class="col s5">
+        <div class="col s12 l5">
           <div class="row">
           <h3>Chasing that Dragon since 2008.</h3>
           <p>
@@ -85,7 +89,6 @@
 
               The atmosphere is electric, charged with an virulent blend of excitement and nostalgia as you and your fellow gamers share stories and recount the thrill of combatting friends without an internet connection. Old Man LAN isn't just a gathering; it's a pilgrimage for those who appreciate the communal spirit that defined the early days of LAN gaming. In a culture constantly racing towards another video game collapse, Old Man LAN stands as a testament to the cornerstones, long paved over, that hold the pillars of gaming culture. </p>
         </div>
-        <div class="col s1"></div>
       </div>
       </div>
     </section>
@@ -124,8 +127,7 @@
     <section id="directionsSec">
         <h1 class="white-text" style="font-family: 'Big Shoulders Stencil Display', sans-serif;">Directions</h1>
         <div class="row">
-        <div class="col s1"></div>
-            <div class="col s5">
+            <div class="col s12 l5 offset-l1">
                 <h4>1) Address:</h4>
                 <a href="https://maps.app.goo.gl/nKd3korEk46GgPyF7" target="_blank">
                 <h6>17 Prince Edward Road, Great Meadows, NJ 07838</h6>
@@ -135,10 +137,9 @@
                 <h4>3)Parking:</h4>
                 <h6>Do not block the driveway so people can load and unload. If weather permits and the ground is not muddy. Park perpendicular to the driveway on the lawn opposite of the house (yellow area). Pull up to the hedges to leave room for people to park behind you if possible, especially if you are spending the night.  If weather is not permitting, parking will have to be solely on the street. Please do not block mailboxes. If it snows, please carpool, if possible, as parking may be taken up by plow walls.</h6>
             </div>
-            <div class="col s5">
+            <div class="col s12 l5">
               <img class="responsive-img" src="assets/images/park.PNG" alt="Parking Pic">
             </div>
-            <div class="col s1"></div>
         </div>
     </div>
     </section>   
@@ -165,12 +166,12 @@
                     </div>
                     <div class="row">
                         <div class="button-col">
-                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" onclick="askQuestion(this)" text="Yes. This is an event. If your schedule cannot accomodate spending or revisiting two or three days playing games, I recommend you come Saturday as that typically is the main event day. Try to make it for as much of the day as possible.">Three Days?</button>
+                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" onclick="askQuestion(this)" text="Yes. The LAN may be scheduled for more than one day, this is an event. If your schedule cannot accommodate spending or revisiting two or three days playing games, I recommend you come Saturday as that typically is the main event day. Try to make it for as much of the day as possible.">Multiple Days?</button>
                         </div>
                     </div>
                     <div class="row">
                         <div class="button-col">
-                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" onclick="askQuestion(this)" text="There will be areas to sleep in three bedrooms and the paritally basement. Bring your own pillows, sleeping bags, and/or cots or air mattresses for your own comfort. A shower will also be available if you feel grody (bring your own toiletries). Bring your own snacks as well as drinks. Alcohol is fine of course, don't overdo it. There are a few liquor stores nearby. As for meals: likely a huge pizza order for Saturday night though nearby Hackettstown (15 min) has many fastfood and restaruants. There are extremely few options for delivery so there will likely be food runs around lunch and dinner. If this interests you, bring cash. Otherwise fend for yourself. Food for sharing is always more than welcome. If desperate, there are 24 hour Quikchecks near by.">Sleep? Food? Drinks? Booze?</button>
+                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" onclick="askQuestion(this)" text="Bring your own snacks as well as drinks. Fridge space is available, but limited. Alcohol is fine of course, don't overdo it. There are a few liquor stores nearby. As for meals, there will likely be a huge pizza order in the evening. Nearby Hackettstown (15 min) has many fastfood and restaruant choices. There are extremely few options for delivery so there will likely be food runs around lunch and dinner. If this interests you, bring cash. Otherwise fend for yourself. Food for sharing is always more than welcome. If desperate, there are 24 hour Quikchecks near by. If sleep is required for the event, there will be areas to do so in three bedrooms and the paritally finished basement. Bring your own pillows, sleeping bags, and/or cots or air mattresses for your own comfort. A shower will also be available if you feel the need (bring your own toiletries). ">Food? Drinks? Booze? Sleep?</button>
                         </div>
                     </div>
                     <div class="row">
@@ -180,7 +181,7 @@
                     </div>
                     <div class="row">
                         <div class="button-col">
-                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" onclick="askQuestion(this)" text="I have a lot of spare cables, maybe a spare keyboard or monitor. Try not to depend on it. Nearby Nykuns General store literally has most everyhing related to snack food, deli, hot food, hygiene, cash, drinks and booze. Otherwise, wait for a food run to Hackettstown where they have Staples, Walmart, Target, ShopRite, etc...">What if I forget something?</button>
+                            <button class="waves-effect waves-light btn blue darken-4 faqBtn" onclick="askQuestion(this)" text="I have a lot of spare cables, maybe a spare keyboard or monitor. Try not to depend on it. Nearby Nykuns General Store literally has most everything related to snack food, deli, hot food, hygiene, cash, drinks and booze. Otherwise, wait for a food run to Hackettstown where they have Staples, Walmart, Target, ShopRite, etc...">What if I forget something?</button>
                         </div>
                     </div>
                     <div class="row">
@@ -213,7 +214,7 @@
                 <div class="col s6">
                     <div class="row">
                         <div class="card-panel transparent-card">
-                            <span id="questionText">...</span>
+                            <span id="questionText">Click the Blue FAQs</span>
                         </div>
                     </div>
                     <!-- Transparent Card Panel -->
@@ -366,4 +367,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i" crossorigin="anonymous"></script>
 <script src="./js/oml.js"></script>
+<script src="./js/pure-snow.js" defer></script>
 </html>

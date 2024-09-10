@@ -151,3 +151,54 @@ section {
     background-color: rgba(255, 255, 255, 0.3); /* Background color with transparency */
     padding: 20px; /* Add padding for spacing */
 }
+
+/*FRAGMESS*/
+
+      body {
+          background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+          min-height: 100vh; 
+          color: white;
+      }
+      
+      .snowflake {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: white;
+          border-radius: 50%;
+          filter: drop-shadow(0 0 10px white);
+      }
+
+      .fragmessHeader{
+        font-family: "Black Ops One", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 100px;
+        top: 10%;
+        left: 50%;
+        animation: flicker 1.5s infinite alternate;
+        color: #fff;
+        z-index: 999;
+      }
+
+      /* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #ff0000,
+      0 0 80px #ff0000,
+      0 0 90px #ff0000,
+      0 0 100px #ff0000,
+      0 0 150px #ff0000;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
